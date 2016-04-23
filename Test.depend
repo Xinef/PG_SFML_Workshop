@@ -1,0 +1,74 @@
+# depslib dependency file v1.0
+1461434260 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/main.cpp
+	<SFML/Graphics.hpp>
+	<string>
+	"Game.h"
+	"Icon.h"
+	"FPScounter.h"
+
+1461413268 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Scene.cpp
+	"Scene.h"
+
+1461418867 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Scene.h
+	<SFML/Graphics.hpp>
+	<string>
+
+1461417253 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/LoadingScene.cpp
+	"LoadingScene.h"
+	"Game.h"
+
+1461419603 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/LoadingScene.h
+	<Scene.h>
+
+1461415434 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Game.cpp
+	"Game.h"
+
+1461419525 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Game.h
+	"Scene.h"
+	"LoadingScene.h"
+	"MenuScene.h"
+	"GameScene.h"
+
+1461414879 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Icon.h
+
+1461420235 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/MenuScene.cpp
+	"MenuScene.h"
+	"Game.h"
+
+1461416701 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/MenuScene.h
+	<Scene.h>
+
+1461433667 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/GameScene.h
+	<list>
+	"Scene.h"
+	"Player.h"
+	"Plasma.h"
+
+1461433510 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/GameScene.cpp
+	"GameScene.h"
+	"Game.h"
+
+1461430707 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Player.h
+	"GameObject.h"
+
+1461430648 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/GameObject.h
+	"SFML/Graphics.hpp"
+
+1461424475 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Player.cpp
+	"Player.h"
+
+1461430657 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/GameObject.cpp
+	"GameObject.h"
+
+1461433710 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Plasma.cpp
+	"Plasma.h"
+
+1461432681 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Plasma.h
+	<GameObject.h>
+
+1461434196 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/FPScounter.cpp
+	"FPScounter.h"
+
+1461434287 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/FPScounter.h
+	<SFML/Graphics.hpp>
+
