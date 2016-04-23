@@ -16,6 +16,7 @@ void MenuScene::handleEvent(sf::Event event, Game &game) {
     if (event.type == sf::Event::KeyPressed) {
         switch(event.key.code) {
         case sf::Keyboard::Num1:
+            game.gameScene.restart();
             game.current = &game.gameScene;
             break;
         case sf::Keyboard::Num2:

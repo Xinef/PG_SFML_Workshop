@@ -8,9 +8,9 @@ class FPScounter
     public:
         FPScounter();
         void draw(float deltaTime, sf::RenderWindow &app);
+        sf::Font font;
     protected:
     private:
-        sf::Font font;
         sf::Text text;
         float dT = 0.0f;
         int n = 0;

@@ -15,6 +15,7 @@ int main()
     game.app = &app;
     sf::Clock clock;
     FPScounter fps;
+    game.font = &fps.font;
 
 	// Start the game loop
     while (app.isOpen())

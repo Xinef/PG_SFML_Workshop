@@ -40,3 +40,12 @@ Player::~Player() {
     delete sprite;
     delete texture;
 }
+
+void Player::restart() {
+
+    position.x = 400.0f;
+    position.y = 550.0f;
+    velocity.x = 0.0f;
+    velocity.y = 0.0f;
+    isAlive = true;
+}

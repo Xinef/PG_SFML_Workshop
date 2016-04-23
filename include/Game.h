@@ -15,6 +15,7 @@ class Game
         GameScene gameScene;
 
         sf::RenderWindow *app;
+        sf::Font *font;
     protected:
     private:
 };

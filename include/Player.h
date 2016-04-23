@@ -9,6 +9,9 @@ class Player: public GameObject
         Player();
         ~Player();
         void runLogic(float deltaTime, Game &game);
+        void restart();
+
+        float isAlive;
     protected:
     private:
         float acceleration = 5000.0f;

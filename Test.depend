@@ -1,15 +1,15 @@
 # depslib dependency file v1.0
-1461434260 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/main.cpp
+1461439660 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/main.cpp
 	<SFML/Graphics.hpp>
 	<string>
 	"Game.h"
 	"Icon.h"
 	"FPScounter.h"
 
-1461413268 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Scene.cpp
+1461440762 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Scene.cpp
 	"Scene.h"
 
-1461418867 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Scene.h
+1461440768 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Scene.h
 	<SFML/Graphics.hpp>
 	<string>
 
@@ -23,7 +23,7 @@
 1461415434 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Game.cpp
 	"Game.h"
 
-1461419525 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Game.h
+1461439601 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Game.h
 	"Scene.h"
 	"LoadingScene.h"
 	"MenuScene.h"
@@ -31,30 +31,33 @@
 
 1461414879 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Icon.h
 
-1461420235 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/MenuScene.cpp
+1461443794 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/MenuScene.cpp
 	"MenuScene.h"
 	"Game.h"
 
 1461416701 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/MenuScene.h
 	<Scene.h>
 
-1461433667 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/GameScene.h
+1461444437 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/GameScene.h
 	<list>
 	"Scene.h"
 	"Player.h"
 	"Plasma.h"
+	"Enemy.h"
+	"EnemyPlasma.h"
+	"Explosion.h"
 
-1461433510 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/GameScene.cpp
+1461444599 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/GameScene.cpp
 	"GameScene.h"
 	"Game.h"
 
-1461430707 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Player.h
+1461443858 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Player.h
 	"GameObject.h"
 
 1461430648 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/GameObject.h
 	"SFML/Graphics.hpp"
 
-1461424475 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Player.cpp
+1461443921 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Player.cpp
 	"Player.h"
 
 1461430657 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/GameObject.cpp
@@ -66,9 +69,28 @@
 1461432681 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Plasma.h
 	<GameObject.h>
 
-1461434196 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/FPScounter.cpp
+1461434379 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/FPScounter.cpp
 	"FPScounter.h"
 
-1461434287 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/FPScounter.h
+1461439650 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/FPScounter.h
 	<SFML/Graphics.hpp>
+
+1461443042 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Enemy.cpp
+	"Enemy.h"
+	"Game.h"
+
+1461437940 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Enemy.h
+	<GameObject.h>
+
+1461440210 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/EnemyPlasma.h
+	<GameObject.h>
+
+1461440814 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/EnemyPlasma.cpp
+	"EnemyPlasma.h"
+
+1461442981 /home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/include/Explosion.h
+	<GameObject.h>
+
+1461444248 source:/home/xinef/Dropbox/workspace/SFML/PG_SFML_Workshop/src/Explosion.cpp
+	"Explosion.h"
 
