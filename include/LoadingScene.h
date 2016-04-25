@@ -13,7 +13,7 @@ class LoadingScene : public Scene
     protected:
     private:
         const float loadingTime = 3.0f;
-        float timeElapsed = 3.0f;           //TODO Set to zero for release.
+        float timeElapsed = 0.0f;           //TODO Set to zero for release.
         sf::RectangleShape progressBar;
 };
 

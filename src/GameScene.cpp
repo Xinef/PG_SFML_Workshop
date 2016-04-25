@@ -120,7 +120,7 @@ void GameScene::spawningEnemies(float deltaTime, Game& game) {
 
 void GameScene::flyEnemyPlasma(float deltaTime, Game& game) {
     if(enemyCooldown < 0.0f && enemies.size() > 0) {
-        enemyCooldown = enemyRateOfFire * (1000.0f / (1000.0f + difficulty));
+        enemyCooldown = enemyRateOfFire * (300.0f / (300.0f + difficulty));
         int random = std::rand() % enemies.size();
         EnemySeq::iterator r = enemies.begin();
         std::advance(r, random);

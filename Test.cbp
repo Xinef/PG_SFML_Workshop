@@ -13,6 +13,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-g" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add library="sfml-graphics" />
@@ -27,6 +28,7 @@
 				<Option compiler="gcc" />
 				<Compiler>
 					<Add option="-O2" />
+					<Add directory="include" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -40,8 +42,33 @@
 			<Add option="-std=c++11" />
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="cb.bmp" />
-		<Unit filename="main.cpp" />
+		<Unit filename="assets/CMR.ttf" />
+		<Unit filename="assets/cb.bmp" />
+		<Unit filename="include/Enemy.h" />
+		<Unit filename="include/EnemyPlasma.h" />
+		<Unit filename="include/Explosion.h" />
+		<Unit filename="include/FPScounter.h" />
+		<Unit filename="include/Game.h" />
+		<Unit filename="include/GameObject.h" />
+		<Unit filename="include/GameScene.h" />
+		<Unit filename="include/Icon.h" />
+		<Unit filename="include/LoadingScene.h" />
+		<Unit filename="include/MenuScene.h" />
+		<Unit filename="include/Plasma.h" />
+		<Unit filename="include/Player.h" />
+		<Unit filename="include/Scene.h" />
+		<Unit filename="src/Enemy.cpp" />
+		<Unit filename="src/EnemyPlasma.cpp" />
+		<Unit filename="src/Explosion.cpp" />
+		<Unit filename="src/FPScounter.cpp" />
+		<Unit filename="src/GameObject.cpp" />
+		<Unit filename="src/GameScene.cpp" />
+		<Unit filename="src/LoadingScene.cpp" />
+		<Unit filename="src/MenuScene.cpp" />
+		<Unit filename="src/Plasma.cpp" />
+		<Unit filename="src/Player.cpp" />
+		<Unit filename="src/Scene.cpp" />
+		<Unit filename="src/main.cpp" />
 		<Extensions>
 			<code_completion />
 			<debugger />

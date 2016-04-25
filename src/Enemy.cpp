@@ -14,13 +14,16 @@ Enemy::Enemy(sf::Vector2f spawnPos) {
     texture = textureTemplate;
     sprite = new sf::Sprite(*texture);
 
+    float scaleFactor = 0.5f;
+    sprite->setScale(scaleFactor, scaleFactor);
+
     position = spawnPos;
     velocity.x = 0.0f;
     velocity.y = 0.0f;
     damping = 5.0f;
-    radius = 45.0f;
+    radius = 45.0f * scaleFactor;
 
-    sprite->setOrigin(46.5f, 42.0f);
+    sprite->setOrigin(46.5f * scaleFactor, 42.0f * scaleFactor);
 
     desiredY = spawnPos.y;
 }
