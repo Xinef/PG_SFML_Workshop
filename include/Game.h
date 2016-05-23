@@ -5,6 +5,7 @@
 #include "LoadingScene.h"
 #include "MenuScene.h"
 #include "GameScene.h"
+#include "SFML/Network.hpp"
 
 class Game
 {
@@ -13,6 +14,10 @@ class Game
         LoadingScene loadingScene;
         MenuScene menuScene;
         GameScene gameScene;
+
+        bool server;
+        int udpPort = 42042;
+        sf::UdpSocket socket;
 
         sf::RenderWindow *app;
         sf::Font *font;

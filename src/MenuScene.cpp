@@ -15,8 +15,14 @@ void MenuScene::runLogic(float deltaTime, Game &game) {
 void MenuScene::handleEvent(sf::Event event, Game &game) {
     if (event.type == sf::Event::KeyPressed) {
         switch(event.key.code) {
-        case sf::Keyboard::Num1:
-            game.gameScene.restart();
+        case sf::Keyboard::A:
+            game.server = false;
+            game.gameScene.restart(game);
+            game.current = &game.gameScene;
+            break;
+        case sf::Keyboard::B:
+            game.server = true;
+            game.gameScene.restart(game);
             game.current = &game.gameScene;
             break;
         case sf::Keyboard::Num2:

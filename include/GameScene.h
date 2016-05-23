@@ -23,7 +23,7 @@ class GameScene : public Scene
         void draw(sf::RenderWindow &app);
         void runLogic(float deltaTime, Game &game);
         void handleEvent(sf::Event event, Game &game);
-        void restart();
+        void restart(Game& game);
     protected:
     private:
         void shooting(float deltaTime, Game& game);
@@ -39,6 +39,12 @@ class GameScene : public Scene
         int score = 0;
         sf::Text scoreText;
         sf::Text escText;
+
+        Player player2;
+        float cooldown2 = 0.0f;
+        float rateOfFire2 = 0.2f;
+        int score2 = 0;
+        sf::Text scoreText2;
 
         PlasmaSeq plasma;
         EnemySeq enemies;

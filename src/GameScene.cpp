@@ -10,13 +10,23 @@ GameScene::GameScene():
 
     scoreText.setString("Score: 0");
     scoreText.setPosition(10.0f, 570.0f);
-    scoreText.setColor(sf::Color::White);
+    scoreText.setColor(sf::Color::Red);
     scoreText.setCharacterSize(20);
+
+    scoreText2.setString("Score: 0");
+    scoreText2.setPosition(10.0f, 550.0f);
+    scoreText2.setColor(sf::Color::Cyan);
+    scoreText2.setCharacterSize(20);
 
     escText.setString("ESC - powro't\nspacja - strzal\n<- -> - ruch");
     escText.setPosition(700.0f, 10.0f);
     escText.setColor(sf::Color::White);
     escText.setCharacterSize(12);
+
+    // NETWORKING
+    if (game.socket.bind(game.udpPort) != sf::Socket::Done) {
+        sf::err() << "Failed to create UDP socket.";
+    }
 }
 
 void GameScene::draw(sf::RenderWindow& app) {
@@ -34,7 +44,9 @@ void GameScene::draw(sf::RenderWindow& app) {
         it->draw(app);
     }
     player.draw(app);
+    player2.draw(app);
     app.draw(scoreText);
+    app.draw(scoreText2);
     app.draw(escText);
 }
 
@@ -59,6 +71,10 @@ void GameScene::runLogic(float deltaTime, Game& game) {
     scoreText.setString("Score: " + scoreString);
     scoreText.setFont(*game.font);
     escText.setFont(*game.font);
+
+    std::string scoreString2 = std::to_string(score2);
+    scoreText2.setString("Score: " + scoreString2);
+    scoreText2.setFont(*game.font);
 }
 
 void GameScene::handleEvent(sf::Event event, Game& game) {
@@ -147,13 +163,15 @@ void GameScene::flyEnemyPlasma(float deltaTime, Game& game) {
     }
 }
 
-void GameScene::restart() {
+void GameScene::restart(Game& game) {
     score = 0;
+    score2 = 0;
     difficulty = 0.0f;
     plasma.clear();
     enemies.clear();
     enPlasma.clear();
     explosions.clear();
     player.restart();
+    player2.restart();
 }
 

@@ -12,6 +12,7 @@ class MenuScene : public Scene
         void handleEvent(sf::Event event, Game &game);
     protected:
     private:
+        std::string ip;
 };
 
 #endif // MENUSCENE_H
