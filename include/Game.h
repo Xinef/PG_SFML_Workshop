@@ -16,8 +16,12 @@ class Game
         GameScene gameScene;
 
         bool server;
-        int udpPort = 42042;
-        sf::UdpSocket socket;
+        unsigned short udpPort = 0;
+        unsigned short udpPortServer = 42042;
+        unsigned short udpPortClient = 42043;
+        std::string serverAddress = "172.20.1.49";
+        std::string clientAddress = "172.20.1.49";
+        sf::UdpSocket *socket = NULL;
 
         sf::RenderWindow *app;
         sf::Font *font;

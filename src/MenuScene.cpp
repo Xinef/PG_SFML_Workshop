@@ -17,11 +17,13 @@ void MenuScene::handleEvent(sf::Event event, Game &game) {
         switch(event.key.code) {
         case sf::Keyboard::A:
             game.server = false;
+            game.udpPort = game.udpPortClient;
             game.gameScene.restart(game);
             game.current = &game.gameScene;
             break;
         case sf::Keyboard::B:
             game.server = true;
+            game.udpPort = game.udpPortServer;
             game.gameScene.restart(game);
             game.current = &game.gameScene;
             break;
